@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Bon Hotels</title>
+</head>
+
+<body>
+
+    <header class="header" id="ourHotel">
+        <img src="./src/logo.png" alt="Bon Hotels Nigeria" class="header__logo">
+        <nav class="header__navigation">
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item"><a class="a" href="#ourHotel">Our Hotel</a></li>
+                <li class="header__navigation-item"><a class="a" href="#services">Rooms & Rates</a></li>
+                <li class="header__navigation-item"><a class="a" href="#facilities">Facilities</a></li>
+                <li class="header__navigation-item"><a class="a" href="#contactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger__menu">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <div class="header__search">
+
+            <form class="header__form">
+                <div class="header__form-city--wrapper">
+                    <select name="" id="" class="header__form-city" aria-placeholder="Select a City">
+                        <option selected>Select a City</option>
+                        <option>Kyiv</option>
+                        <option>London</option>
+                    </select>
+                </div>
+
+                <div class="header__form-check--wrapper">
+                    <input class="header__form-check date" type="text" placeholder="Check In">
+                </div>
+                <div class="header__form-check--wrapper">
+                    <input class="header__form-check date" type="text" placeholder="Check Out">
+                </div>
+                <input class="header__form-submit button" type="submit" value="Check Availability">
+            </form>
+        </div>
+    </header>
+
+    <section class="welcome">
+        <h1 class="welcome__title">Welcome to bon hotel</h1>
+        <p class="welcome__subtitle">Good people. Good thinking. Good feeling</p>
+        <button class="welcome__button button">EXPLORE</button>
+    </section>
+
+    <section class="facilities">
+        <div class="container facilities__container">
+            <h2 class="facilities__title title" id="facilities">Facilities</h2>
+
+            <ul class="facilities__list">
+                <li class="facilities__item">
+                    <img src="./src/icons/kitchen.svg" alt="kitchen" class="facilities__item-img">
+                    <p class="facilities__item-text">Kitchen</p>
+                </li>
+                <li class="facilities__item">
+                    <img src="./src/icons/pool.svg" alt="pool" class="facilities__item-img">
+                    <p class="facilities__item-text">Pool</p>
+                </li>
+                <li class="facilities__item">
+                    <img src="./src/icons/wifi.svg" alt="WiFi" class="facilities__item-img">
+                    <p class="facilities__item-text">Wifi</p>
+                </li>
+
+                <li class="facilities__item">
+                    <img src="./src/icons/gym.svg" alt="Gym" class="facilities__item-img">
+                    <p class="facilities__item-text">Gym</p>
+                </li>
+                <li class="facilities__item">
+                    <img src="./src/icons/taxi.svg" alt="Taxi" class="facilities__item-img">
+                    <p class="facilities__item-text">Taxi</p>
+                </li>
+
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="title services__title">Rooms & Rates</h2>
+            <div class="services__content">
+                <div class="services__content-item">
+
+                    <h2 class="services__content-title">Standard Twin Room</h2>
+                    <button class="button services__content-button">Check Rates</button>
+                </div>
+                <div class="services__content-item">
+                    <h2 class="services__content-title">Standard Room</h2>
+                    <button class="button services__content-button">Check Rates</button>
+                </div>
+                <div class="services__content-item">
+
+                    <h2 class="services__content-title">Standard View Room</h2>
+                    <button class="button services__content-button">Check Rates</button>
+                </div>
+                <div class="services__content-item">
+
+                    <h2 class="services__content-title">Deluxe Room</h2>
+                    <button class="button services__content-button">Check Rates</button>
+                </div>
+            </div>
+
+            <h2 class="services__title title">Get a room already!</h2>
+            <button class="button services__button">Book Now</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__address" id="contactUs">
+                    <img src="./src/logo--dark.png" alt="Bon Hotels" class="footer__address-img">
+
+                    <div class="footer__address-text">
+                        <span class="highlighted">Bon Hotels Head Office</span> <br>
+                        <a href="tel:+27 434 344 432">+27 434 344 432</a> <br>
+                        info@bonhotels.com
+                    </div>
+                </div>
+                <div class="footer__menu">
+                    <nav class="footer__navigation">
+                        <ul class="footer__navigation-list">
+                            <li class="footer__navigation-item"><a class="a" href="#">Our Hotels</a></li>
+                            <li class="footer__navigation-item"><a class="a" href="#">Our Conferencing</a></li>
+                            <li class="footer__navigation-item"><a class="a" href="#">Our Company</a></li>
+                            <li class="footer__navigation-item"><a class="a" href="#">
+                                    Hotel Design</a></li>
+                            <li class="footer__navigation-item"><a class="a" href="#">
+                                    Careers</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__subscribe">
+                    <p class="footer__subscribe-text">Subscribe for Offers</p>
+                    <form class="footer__subscribe-form">
+                        <input type="email" class="footer__subscribe-form--email" placeholder="Email Address">
+                        <input type="submit" value="Subscribe Now" class="footer__subscribe-form--submit button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-links a {
+  text-decoration: none;
+  color: black;
+  width: auto;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  margin: 2em;
+  overflow: hidden;
+}
+
+.main-links a::after, .main-links a::before {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  margin: 5px 0;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.main-links a::after {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.main-links a::before {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.main-links a:hover::after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.main-links a:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=index.css.map */

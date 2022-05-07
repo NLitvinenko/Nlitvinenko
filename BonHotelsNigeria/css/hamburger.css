@@ -1,0 +1,93 @@
+/*
+https://codepen.io/alvarotrigo/pen/wvrzPWL
+*/
+.checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 75px;
+  right: 70px;
+  z-index: 6;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.hamburger__menu {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 75px;
+  right: 70px;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hamburger__menu .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.hamburger__menu .line1 {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.hamburger__menu .line2 {
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.hamburger__menu .line3 {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.checkbox:checked ~ .hamburger__menu .line1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.checkbox:checked ~ .hamburger__menu .line2 {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.checkbox:checked ~ .hamburger__menu .line3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media (max-width: 875px) {
+  .checkbox {
+    pointer-events: auto;
+  }
+  .hamburger__menu .line {
+    background: #DFAA5B;
+  }
+}
+/*# sourceMappingURL=hamburger.css.map */
